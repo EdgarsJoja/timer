@@ -9,14 +9,14 @@ import (
 )
 
 func main() {
-	timeSeconds := flag.Int("ts", 0, "Timer seconds duration")
-	timeMinutes := flag.Int("tm", 0, "Timer minutes duration")
-	timeHours := flag.Int("th", 0, "Timer hours duration")
+	timeSeconds := flag.Int("s", 0, "Timer seconds duration")
+	timeMinutes := flag.Int("m", 0, "Timer minutes duration")
+	timeHours := flag.Int("h", 0, "Timer hours duration")
 
 	timeString := flag.String("t", "", "Specific time. e.g.: 15:04:05")
 
 	title := flag.String("title", "Time's up!", "Notification title")
-	message := flag.String("message", "Done", "Notification message")
+	message := flag.String("msg", "Done", "Notification message")
 
 	flag.Parse()
 
