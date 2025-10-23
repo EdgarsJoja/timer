@@ -4,7 +4,7 @@
 
 ## Usage
 
-Sets timer for 1 hour 15 minutes 20 seconds:
+Sets timer for 1 hour 45 minutes 20 seconds:
 ```bash
 timer -title="Notification title" -msg="Notification message" -h=1 -m=45 -s=20
 ```
