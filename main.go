@@ -16,7 +16,7 @@ func main() {
 	timeString := flag.String("t", "", "Specific time. e.g.: 15:04:05")
 
 	title := flag.String("title", "Time's up!", "Notification title")
-	message := flag.String("msg", "Done", "Notification message")
+	message := flag.String("msg", "", "Notification message")
 
 	flag.Parse()
 
@@ -48,7 +48,7 @@ func main() {
 	<-timer.C
 
 	beeep.AppName = "Timer"
-	err := beeep.Notify(*title, *message, "timer")
+	err := beeep.Notify(*title, *message, "stopwatch")
 	if err != nil {
 		panic(err)
 	}
