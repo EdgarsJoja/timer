@@ -12,6 +12,9 @@ timer -title="Notification title" -msg="Notification message" -h=1 -m=45 -s=20
 Sets timer to specific time:
 ```bash
 timer -t=18:05:29
+
+# seconds can be omitted
+timer -t=18:05
 ```
 
 Specify either any of `h`, `m`, `s` flags or `t` flag alone.
