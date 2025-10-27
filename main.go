@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/gen2brain/beeep"
@@ -23,6 +24,10 @@ func main() {
 	var timer *time.Timer
 
 	if *timeString != "" {
+		if strings.Count(*timeString, ":") == 1 {
+			*timeString = *timeString + ":00"
+		}
+
 		targetTime, err := time.Parse(time.TimeOnly, *timeString)
 
 		if err != nil {
