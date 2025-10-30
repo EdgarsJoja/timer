@@ -2,6 +2,8 @@
 
  Simple CLI command to setup timer that triggers notification when done.
 
+ ![Timer notification](docs/screenshot-1.png "Timer notification")
+
 ## Usage
 
 Sets timer for 1 hour 45 minutes 20 seconds:
