@@ -20,3 +20,12 @@ timer -t=18:05
 ```
 
 Specify either any of `h`, `m`, `s` flags or `t` flag alone.
+
+
+## Run in background
+
+To run in background, append `&!` at the end:
+```bash
+timer -m 1 &!
+```
+The `&` runs program in the background and the `!` removes it from the shell's process, meaning you can close the shell and process will be still running.
