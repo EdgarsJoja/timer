@@ -24,8 +24,14 @@ Specify either any of `h`, `m`, `s` flags or `t` flag alone.
 
 ## Run in background
 
-To run in background, append `&!` at the end:
-```bash
+Run program in background and disown it from the shell.
+
+### zsh
+```zsh
 timer -m 1 &!
 ```
-The `&` runs program in the background and the `!` removes it from the shell's process, meaning you can close the shell and process will be still running.
+
+### bash
+```bash
+timer -m 1 & disown
+```
